@@ -1,0 +1,74 @@
+html { 
+    background: url(Images/snow.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+.breadcrumb{
+      background-color:black;
+      margin-bottom:0px;
+      padding-bottom:0px;
+      font:white;
+  }
+
+body{
+
+    background-color:black;
+}
+
+.jumbotron{
+    text-align:center;
+    line-height:0px;
+    background-image: url("Images/sativa.png");
+    margin-bottom:0px;
+    margin-top:0px;
+    font-family: 'Fascinate Inline', cursive;
+    padding-top:0px;
+    padding-bottom:4px;
+  }
+
+#jumbotext{
+    padding-top:5px;
+    font-family: 'Chicle', cursive;
+    padding-bottom:0px;
+  }
+
+.alert {
+    text-align:center;
+}
+
+#A, #P, #C, #B, .blog{
+    color:white;
+}
+
+#A:hover, #P:hover, #C:hover, #B:hover{
+    color:darkgrey;
+    cursor: pointer;
+}
+
+.about{
+    color:white;
+    text-align:center;
+    padding-top:5px;
+}
+
+form{
+    color:white;
+}
+.portfolio{
+    padding-top:10px;
+    margin-right:5px;
+    margin-left:5px;
+   
+}
+
+.connect{
+    padding-top:10px;
+}
+
+.thumbnail{
+    background-image: url("Images/sativa.png");
+}
+

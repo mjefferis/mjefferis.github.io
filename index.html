@@ -1,61 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="Assets/css/style.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Chicle" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <title>Matt Jefferis</title>
 </head>
+
 <body>
-<!--let's make a navbar-->
-<nav class="navbar navbar-default">
-       <div class="container">
-        <div class="navbar-header">
-        <a class="navbar-brand" id="logo">Matt Jefferis</a>
-        </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-         <ul class="nav navbar-nav navbar-right">
-                 <li><a href="index.html">About</a></li>
-                 <li><a href="connect.html">Contact</a></li>
-                 <li><a href="portfolio.html">Portfolio</a></li>
-                 </ul>
-        </div>
-        </div>
-</nav>
 
-
-<div class="container">
     <div class="row">
-    <!--let's create an about me section-->
-        <div class="col xs-12 col-md-9">
-                <div class="panel panel-default">
-                        <div class="panel-heading">
-                          <h3 class="panel-title" id="headers">About Me</h3>
-                        </div>
-                        <div class="panel-body">
-                                <img id="myphoto" src="Assets/Images/me.jpeg" width="270" height="200" alt="me">
-                                <p1 class="biotext"> Matt Jefferis has a dog named Huckleberry. His dog is his best friend. He likes chips and hummus and knows how to play the guitar. After he learns how to code he will get a better job and move out of his parent's house.</p1>   
-                        </div>
-                      </div>
-
-
+        <div class="col-md-12">
+            <ol class="breadcrumb">
+                <li id="A">
+                    Home
+                </li>
+                <li id="P">
+                    Portfolio
+                </li>
+                <li id="B">Blog</li>
+                <li id="C">Connect</li>
+            </ol>
         </div>
-    <!--create contact--> 
-        <div class="col-xs-12 col-md-3">
-                <div class="panel panel-default">
-                        <div class="panel-heading">
-                          <h3 class="panel-title" id="header">Contact</h3>
-                        </div>
-                        <div class="panel-body">
-                                <a href="https://www.linkedin.com/"><img id="socialmedia" src="Assets/Images/if_linkedin-logo-1_1269935.png" alt="linkedin" width="70"height="70"></a>
-                                <a href="https://stackoverflow.com/"> <img id="socialmedia" src="Assets/Images/if_stack-overflow_1608397.png" alt="stack" width="70" height="70"></a>
-                                <a href="https://github.com/"><img id="socialmedia" src="Assets/Images/if_mark-github_298822.png" alt="github" width="70" height="70"> </a>
-                        </div>
-                      </div>    
-        
-        </div>
-
     </div>
-    
-</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="jumbotron">
+                <h1> Matty Jay</h1>
+                <p id="jumbotext">Roll up a Fatty Jay and stay a while</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="about">
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <p>I'm a philly fullstack developer and really quirky lol</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="connect">
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <div id="successform" class="alert alert-success" role="alert">Form submitted successfully!</div>
+                <form role="form" id="formy">
+                    <div class="form-group">
+                        <p>Check me out on
+                            <a href="https://www.linkedin.com/in/matthew-jefferis/">
+                                <span>linkedin </span>
+                            </a>
+                            <span>or </span>
+                            <a href="https://github.com/mjefferis">
+                                <span>github</span>
+                            </a>
+                        </p>
+
+                        <div id="emptyform" class="alert alert-danger" role="alert">Fill this out completely!</div>
+                        <div id="bademail" class="alert alert-danger" role="alert">That email isn't real!</div>
+
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact">E-mail</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="file">Message</label>
+                        <input type="text" class="form-control" id="message">
+                    </div>
+
+                    <button type="submit" class="btn btn-default" id="submit">Submit</button>
+                    <button type="submit" class="btn btn-default" id="cancel-btn">Cancel</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio">
+        <div class="row">
+            <div class="col-sm-4 col-md-4">
+                <a href="https://bereznd1.github.io/TuneTracker/index.html">
+                    <div class="thumbnail">
+
+                        <div class="caption">
+                            <h3>Tune Tracker</h3>
+                            <p>This app was made to help musicians connect</p>
+
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-4 col-md-4">
+                <a href="https://mjefferis.github.io/Phish-Trivia/">
+                    <div class="thumbnail">
+
+                        <div class="caption">
+                            <h3>Phish Quiz</h3>
+                            <p>Are you really a phishhead?</p>
+
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4 col-md-4">
+                <a href="https://mjefferis.github.io/Twin-Peaks-GIFS/">
+                    <div class="thumbnail">
+
+                        <div class="caption">
+                            <h3>Twin Peaks Gifs Generator</h3>
+                            <p>Because all Twin Peaks fans love GIFS</p>
+
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4 col-md-4">
+                <div class="thumbnail">
+
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>...</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4 col-md-4">
+                <div class="thumbnail">
+
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>...</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4">
+                <div class="thumbnail">
+
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>...</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="blog">
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <h1>3/30/18 Passion versus Career</h1>
+                <p>Poop</p>
+                <h1>1/22/18 My first day at bootcamp</h1>
+                <p>wow dis is incredible i'm so scared omgosh </p>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.ui.min.js"></script>
+    <script src="app.js"></script>
+
 </body>
-<div class="well" class="well well-sm">@Matthew Jefferis</div>
+
 </html>
