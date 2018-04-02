@@ -1,8 +1,3 @@
-$('.connect').hide();
-$('.portfolio').hide();
-$('.blog').hide();
-$('.alert').hide();
-
 var config = {
     apiKey: "AIzaSyBlUG4ucv7CypkpyqV0xxvCUoXW8ZIL040",
     authDomain: "my-first-firebase-projec-85758.firebaseapp.com",
@@ -13,39 +8,35 @@ var config = {
 };
 firebase.initializeApp(config);
 
+$('.alert').hide(); 
+
 $('#A').on('click', function () {
-    $('.about').show();
-    $('.connect').hide();
-    $('.portfolio').hide();
-    $('.blog').hide();
+    $('html, body').animate({
+        scrollTop: $(".jumbotron").offset().top
+    }, 1);
 });
 
 $('#P').on('click', function () {
-    $('.portfolio').show();
-    $('.about').hide();
-    $('.connect').hide();
-    $('.blog').hide();
+    $('html, body').animate({
+        scrollTop: $(".portfolio").offset().top
+    }, 1);
 });
 
 $('#C').on('click', function () {
-    $('.connect').show();
-    $('.about').hide();
-    $('.portfolio').hide();
-    $('.blog').hide();
+    $('html, body').animate({
+        scrollTop: $(".connect").offset().top
+    }, 1);
 });
 $('#B').on('click', function () {
-    $('.connect').hide();
-    $('.about').hide();
-    $('.portfolio').hide();
-    $('.blog').show();
+    $('html, body').animate({
+        scrollTop: $(".resume").offset().top
+    }, 1);
 });
 
-$('.jumbotron').on('click', function () {
-    $('.about').show();
-    $('.connect').hide();
-    $('.portfolio').hide();
-    $('.blog').hide();
-
+$('#top').on('click', function () {
+    $('html, body').animate({
+        scrollTop: $(".jumbotron").offset().top
+    }, 2000);
 });
 
 $("#submit").on("click", function (event) {
@@ -92,12 +83,6 @@ $("#submit").on("click", function (event) {
         }
 
         database.ref().push(newMessage);
-
-        $('.connect').hide();
-        $('.portfolio').hide();
-        $('.blog').hide();
-        $('.alert').hide();
-        $('.about').show();
 
     }
 });
