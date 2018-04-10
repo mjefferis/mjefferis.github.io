@@ -1,16 +1,18 @@
 .breadcrumb{
-      width:100vw; 
+      width:100%; 
       background-color:black;
       padding-bottom:0px;
-      font:white !important;
       margin-left: 0 !important; 
       position:fixed;
       z-index:5
 }
 
-.row {
+.row, .container {
     margin-right: 0 !important; 
     margin-left: 0 !important; 
+}
+.container, .col-md-12 {
+    padding: 0 !important;
 }
 
 body{
@@ -22,7 +24,9 @@ body{
 .jumbotron{
     text-align:center;
     background-image: url("Images/snow.jpg");
-    background-size:100vw 100vh;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
     margin-bottom:0px;
     margin-top:0px;
     font-family: 'Fascinate Inline', cursive;
@@ -30,7 +34,8 @@ body{
     padding-bottom:4px;
     height: 100vh;
     width:100vw; 
-    font:white;
+    color:white;
+    text-shadow: 1px 1px #000;
   }
 
 
@@ -50,32 +55,32 @@ body{
 .about{
     color:white;
     text-align:center;
-    padding-top:5px;
 }
 
 form{
     color:white;
 
 }
+
 .portfolio{
     padding-top:40px;
-    margin-right:5px;
-    margin-left:5px;
     height: 100vh;
     width:100vw; 
-   
    
 }
 
 .connect{
     padding-top:30px;
-    height: 100vh;
-    width:100vw; 
+    height: 100%;
+    width: 100%;
+    background-image: url('http://placekitten.com/g/900/700/');
+    background-position: center;
+
    
 }
 
 .thumbnail{
-    background-image: url("Images/sativa.png");
+    /*background-image: url("Images/sativa.png");*/
     height:25vh;
 }
 
@@ -88,7 +93,6 @@ form{
 
 .backtotop{
     text-align:center;
-    font:white;
     margin-bottom:5px;
 }
 
@@ -97,6 +101,18 @@ form{
     padding-top:5px;
     font-family: 'Chicle', cursive;
     padding-bottom:0px;
-    font:white !important; /*why does this not work?!?!?*/ 
     padding-top:50vh;
   }
+
+.backtotop{
+    position: relative;
+    left: 50%;
+    bottom: 2em;
+    transform: translateX(-50%);
+}
+
+section {
+    height: 100vh;
+    width: 100vw;
+}
+

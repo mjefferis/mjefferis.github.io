@@ -1,10 +1,10 @@
 var config = {
-    apiKey: "AIzaSyBlUG4ucv7CypkpyqV0xxvCUoXW8ZIL040",
-    authDomain: "my-first-firebase-projec-85758.firebaseapp.com",
-    databaseURL: "https://my-first-firebase-projec-85758.firebaseio.com",
-    projectId: "my-first-firebase-projec-85758",
-    storageBucket: "my-first-firebase-projec-85758.appspot.com",
-    messagingSenderId: "789893387238"
+    apiKey: "AIzaSyALnRyWAKcc5fc1q0vRiCegRUw7FsE-HQI",
+    authDomain: "personal-website-6fce1.firebaseapp.com",
+    databaseURL: "https://personal-website-6fce1.firebaseio.com",
+    projectId: "personal-website-6fce1",
+    storageBucket: "personal-website-6fce1.appspot.com",
+    messagingSenderId: "483325953084"
 };
 firebase.initializeApp(config);
 
@@ -39,6 +39,8 @@ $('#top').on('click', function () {
     }, 2000);
 });
 
+
+
 $("#submit").on("click", function (event) {
 
     function validateEmail(email) {
@@ -70,19 +72,23 @@ $("#submit").on("click", function (event) {
         setTimeout(function () { $("#bademail").hide(); }, 4000);
 
     }
-    else {
+    else{
 
         $('#successform').show();
         setTimeout(function () { $("#successform").hide(); }, 3000);
 
-        var newMessage = {
-            newName: name,
-            newEmail: email,
-            newMessage: message,
+        var newSubmission = {
+            name: name,
+            email: email,
+            message: message
 
-        }
+        };
 
-        database.ref().push(newMessage);
+        database.ref().push(newSubmission);
+
+        $("#name").val("");
+        $("#email").val("");
+        $("#message").val("");
 
     }
 });
