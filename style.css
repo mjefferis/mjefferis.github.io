@@ -4,7 +4,11 @@
       padding-bottom:0px;
       margin-left: 0 !important; 
       position:fixed;
-      z-index:5
+      z-index:5;
+      padding-top:0px;
+}
+.container {
+    width: 100%;
 }
 
 .row, .container {
@@ -23,7 +27,7 @@ body{
 
 .jumbotron{
     text-align:center;
-    background-image: url("Images/snow.jpg");
+    background-image: url("Images/philly.jpg");
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -38,17 +42,33 @@ body{
     text-shadow: 1px 1px #000;
   }
 
+  .backdrop {
+      position: absolute;
+      top: 0;
+      left:0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0,0,0,0.5);
+  }
 
 .alert {
     text-align:center;
+    padding-top:0px !important;
+    padding-bottom:0px;
+    margin-top:0px !important;
+    margin-bottom:0px;
+    margin-left:40%;
+    margin-right:40%;
 }
 
 #A, #P, #C, #B{
     color:white;
+    font-size:20px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 
 #A:hover, #P:hover, #C:hover, #B:hover{
-    color:darkgrey;
+    color:skyblue;
     cursor: pointer;
 }
 
@@ -58,12 +78,17 @@ body{
 }
 
 form{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50vh;
     color:white;
+    width: 75%;
 
 }
 
 .portfolio{
-    padding-top:40px;
+    padding-top:37px;
     height: 100vh;
     width:100vw; 
    
@@ -71,24 +96,25 @@ form{
 
 .connect{
     padding-top:30px;
-    height: 100%;
-    width: 100%;
-    background-image: url('http://placekitten.com/g/900/700/');
+    background-image: url('Images/ele.jpg');
+    background-size:cover;
     background-position: center;
-
-   
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .thumbnail{
-    /*background-image: url("Images/sativa.png");*/
-    height:25vh;
+    background-image: url("Images/weather.png");
+    height:33vh;
 }
 
 .resume{
     height: 100vh;
     width:100vw; 
     color:white;
-    padding-top:20px;
+    padding-top:23px;
+    /* overflow: scroll; */
+    margin-left:2%;
 }
 
 .backtotop{
@@ -102,17 +128,51 @@ form{
     font-family: 'Chicle', cursive;
     padding-bottom:0px;
     padding-top:50vh;
+    margin-right:25%;
+    margin-left:25%;
+    font-size:32px;
   }
 
 .backtotop{
     position: relative;
+    top:50%;
     left: 50%;
     bottom: 2em;
     transform: translateX(-50%);
+    
 }
 
 section {
+    position: relative;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
+    /* overflow:auto; */
 }
 
+h6{
+font-family:'times new roman';
+font-size:28px;
+}
+
+h5{
+    font-family:'times new roman';
+    font-size:22px;
+
+}
+h3{
+    /*color:deepskyblue;*/
+    
+}
+#ok{
+
+    display:inline-block;
+    height:50px;
+    width:50px;
+}
+
+
+
+#ccc{ font-size:20px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+
+}

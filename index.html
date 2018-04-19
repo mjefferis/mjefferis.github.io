@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <!--bugs: firebase, jumbotron text, left margin, center back to top button--> 
+    <!--bugs: firebase, jumbotron text, left margin, center back to top button-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -10,174 +10,268 @@
     <link href="https://fonts.googleapis.com/css?family=Chicle" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline" rel="stylesheet">
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
-    <link rel="shortcut icon" type="image/png" href="Images/snow.png" />
+    <link rel="shortcut icon" type="image/png" href="Images/terminal.png" />
     <title>Matt Jefferis</title>
 </head>
 
 <body>
     <div class="container">
-    <div class="row">
-        <div class="col-xs-12 col-md-12">
-            <ol class="breadcrumb">
-                <li id="A">
-                    Home
-                </li>
-                <li id="P">
-                    Portfolio
-                </li>
-                <li id="B">Resume</li>
-                <li id="C">Connect</li>
-            </ol>
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <ol class="breadcrumb">
+                    <li id="A">
+                        Home
+                    </li>
+                    <li id="P">
+                        Portfolio
+                    </li>
+                    <li id="B">Resume</li>
+                    <li id="C">Connect</li>
+                </ol>
+            </div>
         </div>
-    </div>
-    
 
-    
+
+
         <div class="row">
             <div class="col-xs-12 col-md-12">
                 <div class="jumbotron">
-                    <h2 id="jumbotext">Matthew Jefferis</h2>
+                    <h2 id="jumbotext">Hi there, name's Matt. I build applications and products. Take a look around and stay awhile.
+                        <span>
+                            <img src="Images/ok.png" id="ok">
+                        </span>
+                    </h2>
                 </div>
             </div>
         </div>
-       
 
-  <section>
-    <div class="portfolio">
-        <div class="row">
-            <div class="col-xs-4 col-md-4">
-                <a href="https://bereznd1.github.io/TuneTracker/index.html">
-                    <div class="thumbnail">
 
-                        <div class="caption">
-                            <h3>Tune Tracker</h3>
-                            <p>This app was made to help musicians connect</p>
+        <section>
+            <div class="portfolio">
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        <a href="https://bereznd1.github.io/TuneTracker/index.html">
+                            <div class="thumbnail">
 
+                                <div class="caption">
+                                    <h3>Tune Tracker</h3>
+                                    <p>This app was made to help musicians connect. It uses both mapbox's and youtube's APIs
+                                        to let users upload their location and a clip of their music. </p>
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xs-12 col-md-4">
+                        <a href="https://mjefferis.github.io/Phish-Trivia/">
+                            <div class="thumbnail">
+
+                                <div class="caption">
+                                    <h3>Phish Quiz</h3>
+                                    <p>Are you really a phishhead? Take this quiz and find out. This work features my ability
+                                        to use timers and was made with Javascript and Jquery.</p>
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <a href="https://mjefferis.github.io/Twin-Peaks-GIFS/">
+                            <div class="thumbnail">
+
+                                <div class="caption">
+                                    <h3>Twin Peaks Gifs Generator</h3>
+                                    <p>This uses GIPHY's API to feature GIFS from Twin Peaks</p>
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        <div class="thumbnail">
+
+                            <div class="caption">
+                                <h3>Train Scheduler</h3>
+                                <p>Using Firebase and moment.js, </p>
+
+                            </div>
                         </div>
                     </div>
-                </a>
-            </div>
 
-            <div class="col-xs-4 col-md-4">
-                <a href="https://mjefferis.github.io/Phish-Trivia/">
-                    <div class="thumbnail">
+                    <div class="col-xs-12 col-md-4">
+                        <div class="thumbnail">
 
-                        <div class="caption">
-                            <h3>Phish Quiz</h3>
-                            <p>Are you really a phishhead? Take this quiz and find out</p>
+                            <div class="caption">
+                                <h3>Crystal Game</h3>
+                                <p>...</p>
 
+                            </div>
                         </div>
                     </div>
-                </a>
-            </div>
-            <div class="col-xs-4 col-md-4">
-                <a href="https://mjefferis.github.io/Twin-Peaks-GIFS/">
-                    <div class="thumbnail">
+                    <div class="col-xs-12 col-md-4">
+                        <div class="thumbnail">
 
-                        <div class="caption">
-                            <h3>Twin Peaks Gifs Generator</h3>
-                            <p>Because all Twin Peaks fans love GIFS</p>
+                            <div class="caption">
+                                <h3>Psychic Game</h3>
+                                <p>...</p>
 
+                            </div>
                         </div>
                     </div>
-                </a>
-            </div>
-        </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        <div class="thumbnail">
 
-        <div class="row">
-            <div class="col-xs-4 col-md-4">
-                <div class="thumbnail">
+                            <div class="caption">
+                                <h3>More projects coming soon</h3>
+                                <p>...</p>
 
-                    <div class="caption">
-                        <h3>Thumbnail label</h3>
-                        <p>...</p>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="col-xs-12 col-md-4">
+                        <div class="thumbnail">
+
+                            <div class="caption">
+                                <h3>More projects coming soon</h3>
+                                <p>...</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="thumbnail">
+
+                            <div class="caption">
+                                <h3>More projects coming soon</h3>
+                                <p>...</p>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="col-xs-4 col-md-4">
-                <div class="thumbnail">
+        <section>
 
-                    <div class="caption">
-                        <h3>Thumbnail label</h3>
-                        <p>...</p>
-
+            <div class="resume">
+                <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                        <!--<h1>Resume</h1>-->
+                        <h6>Education</h6>
+                        <h5>The University of Pennsylvania, Philadelphia, PA (January-July 2018)</h5>
+                        <p> Penn Coding Bootcamp </p>
+                        <p>An intensive 24-week long boot camp dedicated to designing and building web applications. Reviews
+                            HTML/CSS, Bootstrap, Javascript, jQuery, Node.js, Express.js, and MySQL</p>
+                        <h5>Oberlin College</h5>
+                        <p>College of Arts and Sciences</p>
+                        <p>B.A. Anthropology and East Asian Studies Duel Major, GPA: 3.4</p>
+                        <h6>Work Experience</h6>
+                        <h5>Call Center Assistant</h5>
+                        <ul>
+                            <li>Provide oversight and handles sensitive calls for remote call agents. </li>
+                            <li>Oversees special membership requests. </li>
+                            <li>Participate in Foundation events and commended for initiative, enthusiasm and customer service.</li>
+                        </ul>
+                        <h6>Applications Built</h6>
+                        <h5>TuneTracker</h5>
+                        <ul>
+                            <li>An app used to help musicians connect with other musicians in their local area. Users upload
+                                their contact information, youtube clip of their music to the app, and their geographical
+                                coordinates. This allows other musicians to track other musicians in their area and facilitate
+                                connection.
+                            </li>
+                            <li>Oversees special membership requests. </li>
+                            <li>
+                                <a href="https://bereznd1.github.io/TuneTracker/index.html">https://bereznd1.github.io/TuneTracker/index.html</a>
+                            </li>
+                        </ul>
+                        <h5>Train Scheduler</h5>
+                        <ul>
+                            <li>Using Firebase, users can upload Train departure time information and the app will calculate
+                                when the next train departure time will be in real time with moment.js. This information
+                                is automatically displayed in a table on the app. </li>
+                            <li>
+                                <a href="https://mjefferis.github.io/Train-Scheduler/">https://mjefferis.github.io/Train-Scheduler/</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-xs-4 col-md-4">
-                <div class="thumbnail">
+        </section>
 
-                    <div class="caption">
-                        <h3>Thumbnail label</h3>
-                        <p>...</p>
+        <section class="connect">
+                <div class="backdrop">
+                    <div class="col-xs-12 col-md-12">
 
+                        <form role="form" id="formy">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-xs-2 col-md-2"></div>
+                                    <div class="cols-xs-8 col-md-8">
+                                        <p id="ccc">Check me out on<a href="https://www.linkedin.com/in/matthew-jefferis/"> linkedin</a> or
+                                            <a href="https://github.com/mjefferis">github</a>. Or, say hello below:
+                                        </p>
+                                    </div>
+                                    <div class="col-xs-2 col-md-2"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-2 col-md-2"></div>
+                                    <div class="cols-xs-8 col-md-8">
+                                        <div class="form-group">
+                                            <label id="name" for="name">Name:</label>
+                                            <input type="text" placeholder="Type here..." class="form-control" id="name">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2 col-md-2"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-2 col-md-2"></div>
+                                    <div class="cols-xs-8 col-md-8">
+                                        <div class="form-group">
+                                            <label for="contact" id="email">E-mail:</label>
+                                            <input type="email" placeholder="and here..." class="form-control" id="email">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2 col-md-2"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-2 col-md-2"></div>
+                                    <div class="cols-xs-8 col-md-8">
+                                        <div class="form-group">
+                                            <label for="file" id="message">Message:</label>
+                                            <input type="text-area" placeholder="and don't forget here." class="form-control" id="message" >
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2 col-md-2"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-2 col-md-2"></div>
+                                    <div class="col-xs-10 col-md-10">
+                                        <button type="submit" class="btn btn-default" id="submit" >Submit</button>
+                                    </div>
+                                    <div id="successform" class="alert alert-success" role="alert">Form submitted successfully!</div>
+                                    <div id="emptyform" class="alert alert-danger" role="alert"><p>Fill this out completely!</p></div>
+                                    <div id="bademail" class="alert alert-danger" role="alert">That email isn't real!</div>
+                                    <div class="col-xs-2 col-md-2"></div>
+                                </div>
+                            </div>
+                        </form>
+                        
                     </div>
+
                 </div>
-            </div>
-        </div>
-    </div>
-    </section>
+        </section>
+        
+    </div> <!-- container-->
 
-    <section>
-    
-    <div class="resume">
-        <div class="row">
-            <div class="col-xs-12 col-md-12">
-                <h1>Resume</h1>
-            </div>
-        </div>
-    </div>
-   </section>
-
-  <section>
-    <div class="connect">
-        <div class="row">
-            <div class="col-xs-12 col-md-12">
-               
-                <form role="form" id="formy">
-                    <div class="form-group">
-                        <p>Check me out on
-                            <a href="https://www.linkedin.com/in/matthew-jefferis/">
-                                <span>linkedin </span>
-                            </a>
-                            <span>or </span>
-                            <a href="https://github.com/mjefferis">
-                                <span>github</span>
-                            </a>
-                        </p>
-                        <div id="successform" class="alert alert-success" role="alert">Form submitted successfully!</div>
-                        <div id="emptyform" class="alert alert-danger" role="alert">Fill this out completely!</div>
-                        <div id="bademail" class="alert alert-danger" role="alert">That email isn't real!</div>
-
-                        <label for="name">Name</label>
-                        <input type="text" class="form-control" id="name">
-                    </div>
-                    <div class="form-group">
-                        <label for="contact">E-mail</label>
-                        <input type="email" class="form-control" id="email">
-                    </div>
-                    <div class="form-group">
-                        <label for="file">Message</label>
-                        <input type="text" class="form-control" id="message">
-                    </div>
-
-                    <button type="submit" class="btn btn-default" id="submit">Submit</button>
-                </form>
-            </div>
-        </div>
-    </div>
- 
-    <div class="backtotop">
-        <div class="row">
-            <div class="col-xs-12 col-md-12">
-                <button type="back" class="btn btn-default" id="top">Back to top</button>
-            </div>
-        </div>
-    </div>
-    </section>
-    </div>
 
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

@@ -14,23 +14,31 @@ $('#A').on('click', function () {
     $('html, body').animate({
         scrollTop: $(".jumbotron").offset().top
     }, 1);
+    /*$("#A").velocity({
+        translateY: "10px"
+      }, {
+        //loop: true
+      }).velocity("reverse");*/
 });
 
 $('#P').on('click', function () {
     $('html, body').animate({
         scrollTop: $(".portfolio").offset().top
     }, 1);
+
 });
 
 $('#C').on('click', function () {
     $('html, body').animate({
         scrollTop: $(".connect").offset().top
     }, 1);
+
 });
 $('#B').on('click', function () {
     $('html, body').animate({
         scrollTop: $(".resume").offset().top
     }, 1);
+
 });
 
 $('#top').on('click', function () {
