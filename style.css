@@ -1,30 +1,33 @@
+html, body { overflow-x: hidden; }
+
 .breadcrumb{
-      width:100%; 
-      background-color:black;
-      padding-bottom:0px;
-      margin-left: 0 !important; 
-      position:fixed;
-      z-index:5;
-      padding-top:0px;
+    width:100%; 
+    background-color:black;
+    padding-bottom:0px;
+    margin-left: 0 !important; 
+    position:fixed;
+    z-index:5;
+    padding-top:0px;
 }
+
 .container {
     width: 100%;
-}
-
-.row, .container {
     margin-right: 0 !important; 
     margin-left: 0 !important; 
-}
-.container, .col-md-12 {
-    padding: 0 !important;
-}
-
-body{
-
-    background-color:black;
-
+    padding-left:0 !important;
+    padding-right:0 !important;
+    
 }
 
+
+
+
+.header{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+
+}
 .jumbotron{
     text-align:center;
     background-image: url("Images/philly.jpg");
@@ -42,26 +45,7 @@ body{
     text-shadow: 1px 1px #000;
   }
 
-  .backdrop {
-      position: absolute;
-      top: 0;
-      left:0;
-      height: 100%;
-      width: 100%;
-      background: rgba(0,0,0,0.5);
-  }
-
-.alert {
-    text-align:center;
-    padding-top:0px !important;
-    padding-bottom:0px;
-    margin-top:0px !important;
-    margin-bottom:0px;
-    margin-left:40%;
-    margin-right:40%;
-}
-
-#A, #P, #C, #B{
+  #A, #P, #C, #B{
     color:white;
     font-size:20px;
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -71,57 +55,6 @@ body{
     color:skyblue;
     cursor: pointer;
 }
-
-.about{
-    color:white;
-    text-align:center;
-}
-
-form{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    top: 50vh;
-    color:white;
-    width: 75%;
-
-}
-
-.portfolio{
-    padding-top:37px;
-    height: 100vh;
-    width:100vw; 
-   
-}
-
-.connect{
-    padding-top:30px;
-    background-image: url('Images/ele.jpg');
-    background-size:cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.thumbnail{
-    background-image: url("Images/weather.png");
-    height:33vh;
-}
-
-.resume{
-    height: 100vh;
-    width:100vw; 
-    color:white;
-    padding-top:23px;
-    /* overflow: scroll; */
-    margin-left:2%;
-}
-
-.backtotop{
-    text-align:center;
-    margin-bottom:5px;
-}
-
 
 #jumbotext{
     padding-top:5px;
@@ -133,46 +66,95 @@ form{
     font-size:32px;
   }
 
-.backtotop{
-    position: relative;
-    top:50%;
-    left: 50%;
-    bottom: 2em;
-    transform: translateX(-50%);
-    
-}
-
-section {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    /* overflow:auto; */
-}
-
-h6{
-font-family:'times new roman';
-font-size:28px;
-}
-
-h5{
-    font-family:'times new roman';
-    font-size:22px;
-
-}
-h3{
-    /*color:deepskyblue;*/
-    
-}
-#ok{
+  #ok{
 
     display:inline-block;
     height:50px;
     width:50px;
 }
 
+.backdrop {
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+}
 
+body{
+    background-color:black;
+}
+
+.portfolio{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    padding-top:37px;
+    height: 100vh;
+    width:100vw; 
+    padding-right:2%;
+    padding-left:2%;
+   
+}
+
+.thumbnail{
+    background-image: url("Images/weather.png");
+    height:33vh;
+}
+
+.resume{
+   
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    color:white;
+    padding-top:23px;
+    padding-right:2%;
+    padding-left:2%;
+}
+
+h6{
+    font-family:'times new roman';
+    font-size:28px;
+    }
+    
+h5{
+    font-family:'times new roman';
+    font-size:22px;
+}
+
+.connect{
+    position:relative;
+    width: 100%;
+  
+}
+
+.headerz {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
+
+.well{
+    background-image: url('Images/ele.jpg');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align:center;
+    margin-bottom:0px;
+    padding-bottom:0px;
+
+}
 
 #ccc{ font-size:20px;
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 
 }
+

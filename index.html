@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <!--bugs: firebase, jumbotron text, left margin, center back to top button-->
+    <!--1)margins 2)Form validation +firebase-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -35,244 +35,300 @@
 
         <div class="row">
             <div class="col-xs-12 col-md-12">
+
                 <div class="jumbotron">
-                    <h2 id="jumbotext">Hi there, name's Matt. I build applications and products. Take a look around and stay awhile.
-                        <span>
-                            <img src="Images/ok.png" id="ok">
-                        </span>
-                    </h2>
+                    <div class="backdrop">
+                        <h2 id="jumbotext">Hi there, name's Matt. I'm a fullstack web developer. Take a look at some of my projects and work
+                            below.
+                            <span>
+                                <img src="Images/ok.png" id="ok">
+                            </span>
+                        </h2>
+                    </div>
                 </div>
             </div>
         </div>
 
 
-        <section>
-            <div class="portfolio">
-                <div class="row">
-                    <div class="col-xs-12 col-md-4">
-                        <a href="https://bereznd1.github.io/TuneTracker/index.html">
-                            <div class="thumbnail">
 
-                                <div class="caption">
-                                    <h3>Tune Tracker</h3>
-                                    <p>This app was made to help musicians connect. It uses both mapbox's and youtube's APIs
-                                        to let users upload their location and a clip of their music. </p>
+        <div class="portfolio">
+            <div class="row">
+                <div class="col-xs-12 col-md-4">
+                    <a href="https://bereznd1.github.io/TuneTracker/index.html">
+                        <div class="thumbnail">
 
-                                </div>
+                            <div class="caption">
+                                <h3>Tune Tracker</h3>
+                                <p>This app was made to help musicians connect. It uses both mapbox's and youtube's APIs to
+                                    let users upload their location and a clip of their music. Using Firebase, user information
+                                    is saved and viewable on any machine. </p>
+
                             </div>
-                        </a>
-                    </div>
-
-                    <div class="col-xs-12 col-md-4">
-                        <a href="https://mjefferis.github.io/Phish-Trivia/">
-                            <div class="thumbnail">
-
-                                <div class="caption">
-                                    <h3>Phish Quiz</h3>
-                                    <p>Are you really a phishhead? Take this quiz and find out. This work features my ability
-                                        to use timers and was made with Javascript and Jquery.</p>
-
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-xs-12 col-md-4">
-                        <a href="https://mjefferis.github.io/Twin-Peaks-GIFS/">
-                            <div class="thumbnail">
-
-                                <div class="caption">
-                                    <h3>Twin Peaks Gifs Generator</h3>
-                                    <p>This uses GIPHY's API to feature GIFS from Twin Peaks</p>
-
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
 
-                <div class="row">
-                    <div class="col-xs-12 col-md-4">
+                <div class="col-xs-12 col-md-4">
+                    <a href="https://mjefferis.github.io/Phish-Trivia/">
+                        <div class="thumbnail">
+
+                            <div class="caption">
+                                <h3>Phish Quiz</h3>
+                                <p>Built using Javascript and jQuery, the user has 60 seconds to answer five questions about
+                                    the rock band, Phish. Once all questions are answered or the time is up, the number correct
+                                    is tallied and displayed to the user.
+                                </p>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <a href="https://mjefferis.github.io/Twin-Peaks-GIFS/">
+                        <div class="thumbnail">
+
+                            <div class="caption">
+                                <h3>Twin Peaks Gifs Generator</h3>
+                                <p>This webpage uses GIPHY's API to feature GIFS from Twin Peaks. Click on a character button
+                                    and 10 GIFS corresponding to the character will be displayed.</p>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-md-4">
+                    <a href="https://mjefferis.github.io/Train-Scheduler/">
                         <div class="thumbnail">
 
                             <div class="caption">
                                 <h3>Train Scheduler</h3>
-                                <p>Using Firebase and moment.js, </p>
+                                <p>Using Firebase and moment.js, users can upload train information and see the next departume
+                                    time of the train in real time.</p>
 
                             </div>
                         </div>
-                    </div>
+                    </a>
+                </div>
 
-                    <div class="col-xs-12 col-md-4">
+                <div class="col-xs-12 col-md-4">
+                    <a href="https://mjefferis.github.io/Twin-Peaks-GIFS/">
+                        <div class="thumbnail">
+
+                            <div class="caption">
+                                <h3>Bamazon</h3>
+                                <p>An Amazon-like storefront with built with MySql and Node.js. The app takes in orders from
+                                    customers and deplete stock from the store's inventory. </p>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <a href="https://github.com/mjefferis/Liri">
+                        <div class="thumbnail">
+
+                            <div class="caption">
+                                <h3>Liri</h3>
+                                <p>A Language Interpretation and Recognition Interface. LIRI will be a command line node app
+                                    that takes in parameters and gives you back data. Calls upon the Twitter, Spotify, and
+                                    OMDB API. </p>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-4">
+                    <a href="https://mjefferis.github.io/Crystal-Game/">
                         <div class="thumbnail">
 
                             <div class="caption">
                                 <h3>Crystal Game</h3>
-                                <p>...</p>
+                                <p>The app generates a target number and the user is to match that number by clicking crystals.
+                                    Each crystal is given a random numerical value between 1 and 12. If the user goes over
+                                    the target number, they lose, whereas they win if they match the number. </p>
 
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xs-12 col-md-4">
+                    </a>
+                </div>
+
+                <div class="col-xs-12 col-md-4">
+                    <a href="https://mjefferis.github.io/Psychic-Game/">
                         <div class="thumbnail">
 
                             <div class="caption">
                                 <h3>Psychic Game</h3>
-                                <p>...</p>
+                                <p>The app generates a random letter and the user has nine chances to guess the correct letter.
+                                    If the user guesses correct, a win is tallied and the game resets. If the user runs out
+                                    of guesses, a loss is tallied and the app resets.</p>
 
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                <div class="row">
-                    <div class="col-xs-12 col-md-4">
-                        <div class="thumbnail">
+                <div class="col-xs-12 col-md-4">
+                    <div class="thumbnail">
 
-                            <div class="caption">
-                                <h3>More projects coming soon</h3>
-                                <p>...</p>
+                        <div class="caption">
+                            <h3>New Project Coming Soon</h3>
+                            <p>...</p>
 
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-12 col-md-4">
-                        <div class="thumbnail">
-
-                            <div class="caption">
-                                <h3>More projects coming soon</h3>
-                                <p>...</p>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-md-4">
-                        <div class="thumbnail">
-
-                            <div class="caption">
-                                <h3>More projects coming soon</h3>
-                                <p>...</p>
-
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section>
-
-            <div class="resume">
-                <div class="row">
-                    <div class="col-xs-12 col-md-12">
-                        <!--<h1>Resume</h1>-->
-                        <h6>Education</h6>
-                        <h5>The University of Pennsylvania, Philadelphia, PA (January-July 2018)</h5>
-                        <p> Penn Coding Bootcamp </p>
-                        <p>An intensive 24-week long boot camp dedicated to designing and building web applications. Reviews
-                            HTML/CSS, Bootstrap, Javascript, jQuery, Node.js, Express.js, and MySQL</p>
-                        <h5>Oberlin College</h5>
-                        <p>College of Arts and Sciences</p>
-                        <p>B.A. Anthropology and East Asian Studies Duel Major, GPA: 3.4</p>
-                        <h6>Work Experience</h6>
-                        <h5>Call Center Assistant</h5>
-                        <ul>
-                            <li>Provide oversight and handles sensitive calls for remote call agents. </li>
-                            <li>Oversees special membership requests. </li>
-                            <li>Participate in Foundation events and commended for initiative, enthusiasm and customer service.</li>
-                        </ul>
-                        <h6>Applications Built</h6>
-                        <h5>TuneTracker</h5>
-                        <ul>
-                            <li>An app used to help musicians connect with other musicians in their local area. Users upload
-                                their contact information, youtube clip of their music to the app, and their geographical
-                                coordinates. This allows other musicians to track other musicians in their area and facilitate
-                                connection.
-                            </li>
-                            <li>Oversees special membership requests. </li>
-                            <li>
-                                <a href="https://bereznd1.github.io/TuneTracker/index.html">https://bereznd1.github.io/TuneTracker/index.html</a>
-                            </li>
-                        </ul>
-                        <h5>Train Scheduler</h5>
-                        <ul>
-                            <li>Using Firebase, users can upload Train departure time information and the app will calculate
-                                when the next train departure time will be in real time with moment.js. This information
-                                is automatically displayed in a table on the app. </li>
-                            <li>
-                                <a href="https://mjefferis.github.io/Train-Scheduler/">https://mjefferis.github.io/Train-Scheduler/</a>
-                            </li>
-                        </ul>
-                    </div>
+        <div class="resume">
+            <div class="row">
+                <div class="col-xs-12 col-md-12">
+                    <!--<h1>Resume</h1>-->
+                    <h6>
+                        <u>Education</u>
+                    </h6>
+                    <h5>The University of Pennsylvania, Philadelphia, PA (July 2018)</h5>
+                    <p> Penn Coding Bootcamp </p>
+                    <p>An intensive 24-week long boot camp dedicated to designing and building web applications. Reviews HTML/CSS,
+                        Bootstrap, Javascript, jQuery, Node.js, Express.js, and MySQL</p>
+                    <h5>Oberlin College (June 2015)</h5>
+                    <p>College of Arts and Sciences</p>
+                    <p>B.A. Anthropology and East Asian Studies Duel Major, GPA: 3.5</p>
+                    <h6>
+                        <u>Work Experience</u>
+                    </h6>
+                    <h5>Call Center Assistant</h5>
+                    <ul>
+                        <li>Provide oversight and handles sensitive calls for remote call agents. </li>
+                        <li>Oversees special membership requests. </li>
+                        <li>Participate in Foundation events and commended for initiative, enthusiasm and customer service.</li>
+                    </ul>
+                    <h6>
+                        <u>Applications Built</u>
+                    </h6>
+                    <h5>TuneTracker</h5>
+                    <ul>
+                        <li>An app used to help musicians connect with other musicians in their local area. Users upload their
+                            contact information, youtube clip of their music to the app, and their geographical coordinates.
+                            This allows other musicians to track other musicians in their area and facilitate connection.
+                        </li>
+                        <li>Designed the UI.</li>
+                        <li>
+                            <a href="https://bereznd1.github.io/TuneTracker/index.html">https://bereznd1.github.io/TuneTracker/index.html</a>
+                        </li>
+                    </ul>
+                    <h5>Train Scheduler</h5>
+                    <ul>
+                        <li>Using Firebase, users can upload Train departure time information and the app will calculate when
+                            the next train departure time will be in real time with moment.js. This information is automatically
+                            displayed in a table on the app. </li>
+                        <li>
+                            <a href="https://mjefferis.github.io/Train-Scheduler/">https://mjefferis.github.io/Train-Scheduler/</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="connect">
-                <div class="backdrop">
-                    <div class="col-xs-12 col-md-12">
 
-                        <form role="form" id="formy">
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col-xs-2 col-md-2"></div>
-                                    <div class="cols-xs-8 col-md-8">
-                                        <p id="ccc">Check me out on<a href="https://www.linkedin.com/in/matthew-jefferis/"> linkedin</a> or
-                                            <a href="https://github.com/mjefferis">github</a>. Or, say hello below:
-                                        </p>
-                                    </div>
-                                    <div class="col-xs-2 col-md-2"></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-2 col-md-2"></div>
-                                    <div class="cols-xs-8 col-md-8">
-                                        <div class="form-group">
-                                            <label id="name" for="name">Name:</label>
-                                            <input type="text" placeholder="Type here..." class="form-control" id="name">
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-2 col-md-2"></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-2 col-md-2"></div>
-                                    <div class="cols-xs-8 col-md-8">
-                                        <div class="form-group">
-                                            <label for="contact" id="email">E-mail:</label>
-                                            <input type="email" placeholder="and here..." class="form-control" id="email">
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-2 col-md-2"></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-2 col-md-2"></div>
-                                    <div class="cols-xs-8 col-md-8">
-                                        <div class="form-group">
-                                            <label for="file" id="message">Message:</label>
-                                            <input type="text-area" placeholder="and don't forget here." class="form-control" id="message" >
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-2 col-md-2"></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-2 col-md-2"></div>
-                                    <div class="col-xs-10 col-md-10">
-                                        <button type="submit" class="btn btn-default" id="submit" >Submit</button>
-                                    </div>
-                                    <div id="successform" class="alert alert-success" role="alert">Form submitted successfully!</div>
-                                    <div id="emptyform" class="alert alert-danger" role="alert"><p>Fill this out completely!</p></div>
-                                    <div id="bademail" class="alert alert-danger" role="alert">That email isn't real!</div>
-                                    <div class="col-xs-2 col-md-2"></div>
-                                </div>
+
+
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <div class="connect">
+
+
+                    <div class="well well-sm">
+
+                        <div class="row">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-8">
+                                <p id="ccc">Check me out on
+                                    <a href="https://www.linkedin.com/in/matthew-jefferis/"> linkedin</a> or
+                                    <a href="https://github.com/mjefferis">github</a>. Or, say hello below:
+                                </p>
                             </div>
+                            <div class="col-md-2"></div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-12 col-md-12">
+                                <div id="successform" class="alert alert-success" role="alert">Form submitted successfully!</div>
+                                <div id="emptyform" class="alert alert-danger" role="alert">
+                                    <p>Fill this out completely!</p>
+                                </div>
+                                <div id="bademail" class="alert alert-danger" role="alert">That email isn't real!</div>
+                            </div>
+                        </div>
+
+                        <form class="form-horizontal">
+                            <fieldset>
+
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-1 text-center">
+                                        <i class="fa fa-user bigicon"></i>
+                                    </span>
+                                    <div class="col-md-8">
+                                        <input id="fname" name="name" type="text" placeholder="First Name" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-1 text-center">
+                                        <i class="fa fa-user bigicon"></i>
+                                    </span>
+                                    <div class="col-md-8">
+                                        <input id="lname" name="name" type="text" placeholder="Last Name" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-1 text-center">
+                                        <i class="fa fa-envelope-o bigicon"></i>
+                                    </span>
+                                    <div class="col-md-8">
+                                        <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-1 text-center">
+                                        <i class="fa fa-pencil-square-o bigicon"></i>
+                                    </span>
+                                    <div class="col-md-8">
+                                        <textarea class="form-control" id="message" name="message" placeholder="Enter your message here." rows="7"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-md-12 text-center">
+                                        <button class="btn btn-primary btn-lg" id="submit">Submit</button>
+                                    </div>
+                                </div>
+
+                            </fieldset>
                         </form>
-                        
+
+
                     </div>
 
+
+
+
+
+
+
+
                 </div>
-        </section>
-        
-    </div> <!-- container-->
+            </div>
+        </div>
 
 
+
+    </div>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>

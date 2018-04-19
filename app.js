@@ -5,8 +5,10 @@ var config = {
     projectId: "personal-website-6fce1",
     storageBucket: "personal-website-6fce1.appspot.com",
     messagingSenderId: "483325953084"
-};
-firebase.initializeApp(config);
+  };
+  firebase.initializeApp(config);
+
+  var database = firebase.database();
 
 $('.alert').hide(); 
 
@@ -50,6 +52,7 @@ $('#top').on('click', function () {
 
 
 $("#submit").on("click", function (event) {
+    event.preventDefault();
 
     function validateEmail(email) {
         if (email != undefined || email != '') {
@@ -64,12 +67,13 @@ $("#submit").on("click", function (event) {
         }
     }
 
-    event.preventDefault();
-    var name = $("#name").val().trim();
+   
+    var fName = $("#fname").val().trim();
+    var lName = $('#lname').val().trim(); 
     var email = $("#email").val().trim();
     var message = $("#message").val().trim();
 
-    if (name === "" || email === "" || message === "") {
+    if (fname === "" || lname === ""|| email === "" || message === "") {
         $('#emptyform').show();
         setTimeout(function () { $("#emptyform").hide(); }, 4000);
     }
@@ -86,7 +90,8 @@ $("#submit").on("click", function (event) {
         setTimeout(function () { $("#successform").hide(); }, 3000);
 
         var newSubmission = {
-            name: name,
+            fname: fname,
+            lname: lname,
             email: email,
             message: message
 
@@ -94,16 +99,10 @@ $("#submit").on("click", function (event) {
 
         database.ref().push(newSubmission);
 
-        $("#name").val("");
+        $("#fname").val("");
+        $("#lname").val(""); 
         $("#email").val("");
         $("#message").val("");
 
     }
 });
-
-
-
-
-
-
-
