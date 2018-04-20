@@ -19,9 +19,6 @@ html, body { overflow-x: hidden; }
     
 }
 
-
-
-
 .header{
     position: relative;
     height: 100vh;
@@ -64,13 +61,15 @@ html, body { overflow-x: hidden; }
     margin-right:25%;
     margin-left:25%;
     font-size:32px;
+   
   }
 
   #ok{
 
     display:inline-block;
-    height:50px;
-    width:50px;
+    height:40px;
+    width:40px;
+    padding-top:5px;
 }
 
 .backdrop {
@@ -104,14 +103,15 @@ body{
 }
 
 .resume{
-   
+
     position: relative;
     height: 100vh;
     width: 100%;
     color:white;
-    padding-top:23px;
     padding-right:2%;
     padding-left:2%;
+    
+  
 }
 
 h6{
@@ -127,34 +127,37 @@ h5{
 .connect{
     position:relative;
     width: 100%;
-  
+  height:100vh;
+  background-image: url('Images/ele.jpg');
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
+ margin-top:4%;
 }
 
-.headerz {
-    color: #36A0FF;
-    font-size: 27px;
-    padding: 10px;
-}
-
-.bigicon {
-    font-size: 35px;
-    color: #36A0FF;
-}
-
-.well{
-    background-image: url('Images/ele.jpg');
-    background-size:cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-position: center;
+.well,.w{
+    position:relative;
+    top:15%;
+    bottom:15%;
     text-align:center;
     margin-bottom:0px;
     padding-bottom:0px;
+
 
 }
 
 #ccc{ font-size:20px;
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 
+
 }
 
+.alert{
+    margin-left:30%;
+    margin-right:30%;
+}
+
+.education{
+    padding-top:20px;
+}

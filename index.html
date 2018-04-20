@@ -2,14 +2,13 @@
 <html lang="en">
 
 <head>
-    <!--1)margins 2)Form validation +firebase-->
+    <!--1)connect in breadcrumbs 2)firebase-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Chicle" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline" rel="stylesheet">
-    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
     <link rel="shortcut icon" type="image/png" href="Images/terminal.png" />
     <title>Matt Jefferis</title>
 </head>
@@ -38,8 +37,8 @@
 
                 <div class="jumbotron">
                     <div class="backdrop">
-                        <h2 id="jumbotext">Hi there, name's Matt. I'm a fullstack web developer. Take a look at some of my projects and work
-                            below.
+                        <h2 id="jumbotext">Hi there, name's Matt. I'm a Philly fullstack web developer. Take a look at some of my projects.
+                          
                             <span>
                                 <img src="Images/ok.png" id="ok">
                             </span>
@@ -184,10 +183,11 @@
             </div>
         </div>
 
-        <div class="resume">
-            <div class="row">
-                <div class="col-xs-12 col-md-12">
-                    <!--<h1>Resume</h1>-->
+        <div class="resume" >
+            <div class="row" >
+                <div class="col-xs-12 col-md-12 education">
+                   
+                   
                     <h6>
                         <u>Education</u>
                     </h6>
@@ -232,17 +232,19 @@
                     </ul>
                 </div>
             </div>
-        </div>
-
+       
+     
+</div>
 
 
 
         <div class="row">
             <div class="col-xs-12 col-md-12">
                 <div class="connect">
+                    <!--   <div class="backdrop">-->
 
-
-                    <div class="well well-sm">
+                    <!-- <div class="well well-sm">-->
+                    <div class="w">
 
                         <div class="row">
                             <div class="col-md-2"></div>
@@ -257,9 +259,9 @@
 
                         <div class="row">
                             <div class="col-xs-12 col-md-12">
-                                <div id="successform" class="alert alert-success" role="alert">Form submitted successfully!</div>
+                                <div id="successform" class="alert alert-success" role="alert">Form submitted successfully! Thanks for reaching out!</div>
                                 <div id="emptyform" class="alert alert-danger" role="alert">
-                                    <p>Fill this out completely!</p>
+                                    <p>Fill this out completely, please!</p>
                                 </div>
                                 <div id="bademail" class="alert alert-danger" role="alert">That email isn't real!</div>
                             </div>
@@ -311,25 +313,31 @@
 
                             </fieldset>
                         </form>
-
-
                     </div>
 
-
-
-
-
-
-
-
                 </div>
+
+
             </div>
         </div>
+    </div>
 
 
 
     </div>
-
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyALnRyWAKcc5fc1q0vRiCegRUw7FsE-HQI",
+    authDomain: "personal-website-6fce1.firebaseapp.com",
+    databaseURL: "https://personal-website-6fce1.firebaseio.com",
+    projectId: "personal-website-6fce1",
+    storageBucket: "personal-website-6fce1.appspot.com",
+    messagingSenderId: "483325953084"
+  };
+  firebase.initializeApp(config);
+</script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.ui.min.js"></script>

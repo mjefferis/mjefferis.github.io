@@ -1,14 +1,4 @@
-var config = {
-    apiKey: "AIzaSyALnRyWAKcc5fc1q0vRiCegRUw7FsE-HQI",
-    authDomain: "personal-website-6fce1.firebaseapp.com",
-    databaseURL: "https://personal-website-6fce1.firebaseio.com",
-    projectId: "personal-website-6fce1",
-    storageBucket: "personal-website-6fce1.appspot.com",
-    messagingSenderId: "483325953084"
-  };
-  firebase.initializeApp(config);
-
-  var database = firebase.database();
+var database = firebase.database();
 
 $('.alert').hide(); 
 
@@ -38,7 +28,7 @@ $('#C').on('click', function () {
 });
 $('#B').on('click', function () {
     $('html, body').animate({
-        scrollTop: $(".resume").offset().top
+        scrollTop: $(".education").offset().top
     }, 1);
 
 });
