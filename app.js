@@ -1,4 +1,14 @@
-var database = firebase.database();
+var config = {
+    apiKey: "AIzaSyC6919Es1aUW-UFbq-aIphnb05QImE1X_s",
+    authDomain: "live-37774.firebaseapp.com",
+    databaseURL: "https://live-37774.firebaseio.com",
+    projectId: "live-37774",
+    storageBucket: "live-37774.appspot.com",
+    messagingSenderId: "832287297965"
+  };
+  firebase.initializeApp(config);
+
+  var database = firebase.database();
 
 $('.alert').hide(); 
 
@@ -43,20 +53,6 @@ $('#top').on('click', function () {
 
 $("#submit").on("click", function (event) {
     event.preventDefault();
-
-    function validateEmail(email) {
-        if (email != undefined || email != '') {
-            var regExp2 = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-            var match2 = email.match(regExp2);
-            if (match2 && match2[2].length == 11) {
-                return true;
-            }
-            else {
-                return false;
-            }
-        }
-    }
-
    
     var fName = $("#fname").val().trim();
     var lName = $('#lname').val().trim(); 
@@ -68,31 +64,32 @@ $("#submit").on("click", function (event) {
         setTimeout(function () { $("#emptyform").hide(); }, 4000);
     }
 
-    else if (!validateEmail(email)) {
+   else if (email.indexOf('@')<0){
 
         $('#bademail').show();
         setTimeout(function () { $("#bademail").hide(); }, 4000);
 
     }
     else{
+       
 
         $('#successform').show();
         setTimeout(function () { $("#successform").hide(); }, 3000);
 
-        var newSubmission = {
+       var newSubmission = {
             fname: fname,
             lname: lname,
             email: email,
             message: message
 
-        };
+        }
 
         database.ref().push(newSubmission);
 
-        $("#fname").val("");
-        $("#lname").val(""); 
-        $("#email").val("");
-        $("#message").val("");
+        $("#fname").val(" ");
+        $("#lname").val(" "); 
+        $("#email").val(" ");
+        $("#message").val(" ");
 
     }
 });

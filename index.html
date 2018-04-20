@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Chicle" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="Images/terminal.png" />
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
     <title>Matt Jefferis</title>
 </head>
 
@@ -263,7 +264,7 @@
                                 <div id="emptyform" class="alert alert-danger" role="alert">
                                     <p>Fill this out completely, please!</p>
                                 </div>
-                                <div id="bademail" class="alert alert-danger" role="alert">That email isn't real!</div>
+                                <div id="bademail" class="alert alert-danger" role="alert">Email needs to include the '@' symbol</div>
                             </div>
                         </div>
 
@@ -325,19 +326,8 @@
 
 
     </div>
-    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyALnRyWAKcc5fc1q0vRiCegRUw7FsE-HQI",
-    authDomain: "personal-website-6fce1.firebaseapp.com",
-    databaseURL: "https://personal-website-6fce1.firebaseio.com",
-    projectId: "personal-website-6fce1",
-    storageBucket: "personal-website-6fce1.appspot.com",
-    messagingSenderId: "483325953084"
-  };
-  firebase.initializeApp(config);
-</script>
+
+   
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.ui.min.js"></script>
