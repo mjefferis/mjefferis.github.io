@@ -61,13 +61,13 @@ $("#submit").on("click", function (event) {
 
     if (fname === "" || lname === ""|| email === "" || message === "") {
         $('#emptyform').show();
-        setTimeout(function () { $("#emptyform").hide(); }, 4000);
+        setTimeout(function () { $("#emptyform").hide(); }, 3000);
     }
 
    else if (email.indexOf('@')<0){
 
         $('#bademail').show();
-        setTimeout(function () { $("#bademail").hide(); }, 4000);
+        setTimeout(function () { $("#bademail").hide(); }, 3000);
 
     }
     else{

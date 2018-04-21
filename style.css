@@ -48,6 +48,12 @@ html, body { overflow-x: hidden; }
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 
+/*@media(max-width:767px){   #A, #P, #C, #B{
+    color:white;
+    font-size:12px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}}*/
+
 #A:hover, #P:hover, #C:hover, #B:hover{
     color:skyblue;
     cursor: pointer;
