@@ -160,8 +160,8 @@ h5{
     width: 100%;
   height:100vh;
   background-image:  linear-gradient(
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0.75)
   ),url('Images/ele.jpg');
   background-size:cover;
   background-position: center;
@@ -194,4 +194,6 @@ h5{
 
 .education{
     padding-top:20px;
+}
+a{
 }
