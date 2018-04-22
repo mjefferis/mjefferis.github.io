@@ -48,11 +48,32 @@ html, body { overflow-x: hidden; }
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 
-/*@media(max-width:767px){   #A, #P, #C, #B{
-    color:white;
-    font-size:12px;
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-}}*/
+@media(max-width:767px){  
+.breadcrumb{
+    display:none;
+}
+
+#jumbotext{
+   
+    font-family: 'Chicle', cursive;
+    margin-bottom:70%;
+    padding-bottom:70%;
+    margin-right:15%;
+    margin-left:15%;
+    font-size:18px;
+    margin-top:0;
+    padding-top:0;
+    margin-top:0;
+   position:relative;
+   bottom:10%;
+  }
+
+#ok{
+    display:none !important;
+    visibility: hidden;
+}
+
+}
 
 #A:hover, #P:hover, #C:hover, #B:hover{
     color:skyblue;
@@ -60,6 +81,7 @@ html, body { overflow-x: hidden; }
 }
 
 #jumbotext{
+   
     padding-top:5px;
     font-family: 'Chicle', cursive;
     padding-bottom:0px;
@@ -67,7 +89,6 @@ html, body { overflow-x: hidden; }
     margin-right:25%;
     margin-left:25%;
     font-size:32px;
-   
   }
 
   #ok{
