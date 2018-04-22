@@ -1,0 +1,1 @@
+This is the webpage for my personal website. It was built using Bootstrap but also utilizes an external stylesheet to edit any preconstructed boostrap elements. I am currently fixing the margins and a more visually appealing form. Likewise, it will soon be mobile responsive. 

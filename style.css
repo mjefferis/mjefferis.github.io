@@ -48,13 +48,15 @@ html, body { overflow-x: hidden; }
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 
+
+
+
 @media(max-width:767px){  
 .breadcrumb{
     display:none;
 }
 
 #jumbotext{
-   
     font-family: 'Chicle', cursive;
     margin-bottom:70%;
     padding-bottom:70%;
@@ -65,7 +67,7 @@ html, body { overflow-x: hidden; }
     padding-top:0;
     margin-top:0;
    position:relative;
-   bottom:20%;
+   bottom:10%;
   }
 
 #ok{
@@ -147,7 +149,7 @@ body{
     color:white;
     padding-right:2%;
     padding-left:2%;
-    
+    color:lightgrey;
   
 }
 h3{
@@ -204,5 +206,51 @@ h5{
 .education{
     padding-top:20px;
 }
-a{
+
+@media (min-width: 1200px) {
+
+    #A, #P, #C, #B{
+        color:white;
+        font-size:26px;
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    }
+    #jumbotext{
+        font-size:45px;
+        position:relative;
+        bottom:10%;
+      }
+      .thumbnail{
+        font-size:16px;
+    }
+h3{
+    font-size:26px;
+}
+
+#ccc{
+    font-size:28px;
+}
+
+
+h6{
+    font-family:'times new roman';
+    font-size:35px;
+    }
+    
+h5{
+    font-family:'times new roman';
+    font-size:29px;
+}
+
+.resume p{
+    font-size:19px;
+}
+
+.resume li{
+    font-size:19px;
+}
+#ok{
+    height:42px;
+    width:42px;
+}
+
 }
