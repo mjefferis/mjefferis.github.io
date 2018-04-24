@@ -2,7 +2,7 @@ html, body { overflow-x: hidden; }
 
 .breadcrumb{
     width:100%; 
-    background-color:MidnightBlue;
+    background-color:midnightblue;
     padding-bottom:0px;
     margin-left: 0 !important; 
     position:fixed;
@@ -142,6 +142,10 @@ body{
     height:33vh;
 }
 
+.thumbnail p{
+    padding-bottom:12px;
+}
+
 .resume{
 
     position: relative;
@@ -151,6 +155,7 @@ body{
     padding-right:2%;
     padding-left:2%;
     color:lightgrey;
+    margin-bottom:20px;
   
 }
 h3{
@@ -199,13 +204,12 @@ h5{
 }
 
 .alert{
-    margin-left:30%;
-    margin-right:30%;
+  
   
 }
 
 .education{
-    padding-top:20px;
+    padding-top:25px;
 }
 
 @media (min-width: 1200px) {
@@ -252,6 +256,9 @@ h5{
 #ok{
     height:42px;
     width:42px;
+}
+.alert{
+    font-size:15px;
 }
 
 }

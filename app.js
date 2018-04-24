@@ -55,19 +55,23 @@ $("#submit").on("click", function (event) {
     event.preventDefault();
    
     var fName = $("#fname").val().trim();
-    var lName = $('#lname').val().trim(); 
+    
     var email = $("#email").val().trim();
     var message = $("#message").val().trim();
 
-    if (fname === "" || lname === ""|| email === "" || message === "") {
+    if (fname === "" ||  email === "" || message === "") {
         $('#emptyform').show();
         setTimeout(function () { $("#emptyform").hide(); }, 3000);
+        $('.btn').hide();
+        setTimeout(function () { $(".btn").show(); }, 3000);
     }
 
    else if (email.indexOf('@')<0){
 
         $('#bademail').show();
         setTimeout(function () { $("#bademail").hide(); }, 3000);
+        $('.btn').hide();
+        setTimeout(function () { $(".btn").show(); }, 3000);
 
     }
     else{
@@ -75,6 +79,8 @@ $("#submit").on("click", function (event) {
 
         $('#successform').show();
         setTimeout(function () { $("#successform").hide(); }, 3000);
+        $('.btn').hide();
+        setTimeout(function () { $(".btn").show(); }, 3000);
 
        var newSubmission = {
             fname: fname,
@@ -87,7 +93,7 @@ $("#submit").on("click", function (event) {
         database.ref().push(newSubmission);
 
         $("#fname").val(" ");
-        $("#lname").val(" "); 
+    
         $("#email").val(" ");
         $("#message").val(" ");
 
