@@ -112,6 +112,14 @@ a{
     display:none;
 }
 
+#full{
+    display:none;
+}
+
+#sss{
+    display:none;
+}
+
 .thumbnail p{
     font-size:12px;
 }
@@ -124,6 +132,8 @@ span.glyphicon-comment
                        {margin-top:25px; 
     font-size: 2.1em;
     z-index:4 !important;
+    margin-right:10px;
+    padding-right:15px;
 
 }
 
