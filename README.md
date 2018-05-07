@@ -1,8 +1,12 @@
 Personal Website
-=============
-
-This is the webpage for my personal website. It was built using Bootstrap 3 but also utilizes an external stylesheet to edit any preconstructed boostrap elements. Currently, I am working on making it look aesthetically pleasing on a phone sized browser.
-
 ![Screenshot](Images/screenshot.png)
+=============
+## About
+This is the repo for my personal website. The website hosts my portfolio and résumé. Currently, I am working on making it look aesthetically pleasing on a phone sized browser. Webpage: https://mjefferis.github.io/
+## Technologies Used
+Bootstrap 3/CSS/HTML
+Javascript/jQuery
+Firebase
+Velocity.js 
 
-Webpage: https://mjefferis.github.io/
+ 
