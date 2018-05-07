@@ -5,4 +5,4 @@ This is the webpage for my personal website. It was built using Bootstrap 3 but 
 
 ![Screenshot](Images/screenshot.png)
 
-Live: https://mjefferis.github.io/
+Webpage: https://mjefferis.github.io/
