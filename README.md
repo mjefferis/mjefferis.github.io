@@ -1,9 +1,6 @@
-<<<<<<< HEAD
-#Personal Website#
+#Personal Website
 
 This is the webpage for my personal website. It was built using Bootstrap but also utilizes an external stylesheet to edit any preconstructed boostrap elements. Currently, I am working on making it look aesthetically pleasing on a phone sized browser.
-
-![myimage-alt-tag](Images/screenshot.png)
 
 Live: https://mjefferis.github.io/
 =======
@@ -18,5 +15,3 @@ Javascript/jQuery <br/>
 Firebase <br/>
 Velocity.js 
 
- 
->>>>>>> c4f4d44f029c3c42735d0568381511b4273c4c3d
