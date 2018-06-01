@@ -36,6 +36,7 @@ $('#C').on('click', function () {
     }, 1);
 
 });
+
 $('#B').on('click', function () {
     $('html, body').animate({
         scrollTop: $(".education").offset().top
@@ -55,7 +56,6 @@ $("#submit").on("click", function (event) {
     event.preventDefault();
    
     var fName = $("#fname").val().trim();
-    
     var email = $("#email").val().trim();
     var message = $("#message").val().trim();
 
@@ -67,16 +67,13 @@ $("#submit").on("click", function (event) {
     }
 
    else if (email.indexOf('@')<0){
-
         $('#bademail').show();
         setTimeout(function () { $("#bademail").hide(); }, 3000);
         $('.btn').hide();
         setTimeout(function () { $(".btn").show(); }, 3000);
 
     }
-    else{
-       
-
+    else {
         $('#successform').show();
         setTimeout(function () { $("#successform").hide(); }, 3000);
         $('.btn').hide();
@@ -93,7 +90,6 @@ $("#submit").on("click", function (event) {
         database.ref().push(newSubmission);
 
         $("#fname").val(" ");
-    
         $("#email").val(" ");
         $("#message").val(" ");
 

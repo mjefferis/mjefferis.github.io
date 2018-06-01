@@ -1,53 +1,52 @@
 html, body { overflow-x: hidden; }
 
-span.glyphicon-user, span.glyphicon-envelope
-                       {margin-top:18px; 
+span.glyphicon-user, span.glyphicon-envelope {
+    margin-top:18px; 
     font-size: 3.5em;
     z-index:4 !important;
 }
-span.glyphicon-comment
-                       {margin-top:35px; 
-    font-size: 3.5em;
-    z-index:4 !important;
 
+span.glyphicon-comment {
+    margin-top:35px; 
+    font-size: 3.5em;
+    z-index:4 !important;
 }
+
 textarea {
   resize: none;
 }
-form{
+
+form {
     color:white;
     z-index:4;
     font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size:14px;
-    text-align:none;
-    
+    text-align:none;  
 }
 
-label{
+label {
     text-align:left;
 }
 
-.btn{
+.btn {
     border-color:midnightblue;
     background-color:midnightblue;
-    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
-   
-   
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; 
 }
 
-.btn:hover{
+.btn:hover {
     border-color:skyblue;
     background-color:skyblue;;  
     color:black; 
 }
 
-.alert{
+.alert {
     text-align:center;
     position:relative;
     top:84px;
 }
 
-.breadcrumb{
+.breadcrumb {
     width:100%; 
     background-color:midnightblue;
     padding-bottom:0px;
@@ -56,7 +55,6 @@ label{
     z-index:5;
     padding-top:0px;
     font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
-
 }
 
 .container {
@@ -64,17 +62,16 @@ label{
     margin-right: 0 !important; 
     margin-left: 0 !important; 
     padding-left:0 !important;
-    padding-right:0 !important;
-    
+    padding-right:0 !important; 
 }
 
-.header{
+.header {
     position: relative;
     height: 100vh;
     width: 100%;
-
 }
-.jumbotron{
+
+.jumbotron {
     text-align:center;
     background-image: url("Images/philly.jpg");
     background-size:cover;
@@ -82,27 +79,23 @@ label{
     background-repeat: no-repeat;
     margin-bottom:0px;
     margin-top:0px;
-    
     padding-top:0px;
     padding-bottom:4px;
     height: 100vh;
     width:100vw; 
     color:white;
     text-shadow: 1px 1px #000;
-  }
+}
 
-  #A, #P, #C, #B{
+#A, #P, #C, #B {
     color:white;
     font-size:20px;
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 
-a{
-   color: skyblue;
-   
+a {
+   color: skyblue; 
 }
-
-
 
 @media(max-width:767px){  
 .breadcrumb{
@@ -132,17 +125,15 @@ span.glyphicon-user, span.glyphicon-envelope
     z-index:4 !important;
 }
 span.glyphicon-comment
-                       {margin-top:25px; 
+    {margin-top:25px; 
     font-size: 2.1em;
     z-index:4 !important;
     margin-right:10px;
     padding-right:15px;
-
 }
 
-#jumbotext{
+#jumbotext {
     font-family: 'Chicle', cursive;
-
     margin-bottom:70%;
     padding-bottom:70%;
     margin-right:15%;
@@ -153,26 +144,25 @@ span.glyphicon-comment
     margin-top:0;
    position:relative;
    bottom:22%;
-  }
+}
 
-#ok{
+#ok {
     display:none !important;
     visibility: hidden;
 }
 
-.w{
+.w {
     text-align:center;
 }
 
 }
 
-#A:hover, #P:hover, #C:hover, #B:hover{
+#A:hover, #P:hover, #C:hover, #B:hover {
     color:skyblue;
     cursor: pointer;
 }
 
-#jumbotext{
-   
+#jumbotext {
     padding-top:5px;
     font-family: 'Chicle', cursive;
     padding-bottom:0px;
@@ -180,13 +170,10 @@ span.glyphicon-comment
     margin-right:25%;
     margin-left:25%;
     font-size:39px;
-
     color:white;
-    
-  }
+}
 
-  #ok{
-
+#ok {
     display:inline-block;
     height:35px;
     width:35px;
@@ -194,9 +181,6 @@ span.glyphicon-comment
     margin-top:0;
     padding-bottom:0;
     margin-bottom:0;
-
-    
-    
 }
 
 .backdrop {
@@ -208,11 +192,11 @@ span.glyphicon-comment
     background: rgba(0,0,0,0.4);
 }
 
-body{
+body {
     background-color:black;
 }
 
-.portfolio{
+.portfolio {
     position: relative;
     height: 100vh;
     width: 100%;
@@ -221,14 +205,11 @@ body{
     width:100vw; 
     padding-right:2%;
     padding-left:2%;
-   
 }
 
-.thumbnail{
+.thumbnail {
     background-image: url("Images/cloudy-day.png");
     height:33vh;
-  
-   
 }
 
 .thumbnail p{
@@ -238,8 +219,7 @@ body{
     
 }
 
-.resume{
-
+.resume {
     position: relative;
     height: 100vh;
     width: 100%;
@@ -252,18 +232,18 @@ body{
     font-size:14px;
   
 }
-h3{
+
+h3 {
     text-align:center;
     font-size:24px;
 }
-h6{
+
+h6 {
     font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size:24px;
-
-
-    }
+}
     
-h5{
+h5 {
     font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size:22px;
 }
@@ -271,7 +251,7 @@ h5{
 .connect{
     position:relative;
     width: 100%;
-  height:100vh;
+    height:100vh;
   /*background-image:  linear-gradient(
     rgba(0, 0, 0, 0.7),
     rgba(0, 0, 0, 0.7)
@@ -280,28 +260,25 @@ h5{
   background-position: center;
   background-repeat: no-repeat;
   background-position: center;*/
- margin-top:4%;
+   margin-top:4%;
 }
 
-.well,.w{
+.well,.w {
     position:relative;
     top:15%;
     bottom:15%;
     text-align:center;
     margin-bottom:0px;
     padding-bottom:0px;
-
-
 }
 
-#ccc{ font-size:22px;
+#ccc { 
+    font-size:22px;
     font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
     color:white;
-
 }
 
-
-.education{
+.education {
     padding-top:25px;
 }
 
@@ -310,57 +287,56 @@ h5{
     .connect{
         height:none;
     }
-
- 
     #jumbotext{
         font-size:45px;
         position:relative;
         bottom:10%;
-      }
+    }
       .thumbnail p{
         font-size:17px;
     }
-h3{
+
+    h3{
     font-size:30px;
-}
+    }
 
-#ccc{
+    #ccc{
     font-size:27px;
-}
+    }
 
-
-h6{
+    h6{
     font-family:'times new roman';
     font-size:30px;
     }
     
-h5{
+    h5{
     font-family:'times new roman';
     font-size:27px;
-}
+    }
 
-.resume p{
+   .resume p{
     font-size:17px;
     font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
-}
+    }
 
-.resume li{
+    .resume li{
     font-size:17px;
     font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
-}
-#ok{
+    }
+
+    #ok{
     height:42px;
     width:42px;
-}
-.alert{
+    }
+
+    .alert{
     font-size:15px;
+   }
 
-}
-
-.alert{
+   .alert{
     position:relative;
-        top:110px;}
-}
+    top:110px;}
+    }
 
 @media(min-width:768px) and (max-width:991px){
     .thumbnail p{
@@ -386,5 +362,4 @@ h5{
         font-size:20px;
         font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
     }
-
 }
