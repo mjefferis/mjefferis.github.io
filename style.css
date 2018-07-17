@@ -97,8 +97,9 @@ a {
    color: skyblue; 
 }
 
+
 @media(max-width:767px){  
-.breadcrumb{
+#A,#P,#B,#C{
     display:none;
 }
 #train{
