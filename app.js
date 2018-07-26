@@ -55,7 +55,7 @@ $('#top').on('click', function () {
 $("#submit").on("click", function (event) {
     event.preventDefault();
    
-    var fName = $("#fname").val().trim();
+    var fname = $("#fname").val().trim();
     var email = $("#email").val().trim();
     var message = $("#message").val().trim();
 

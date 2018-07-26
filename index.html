@@ -13,12 +13,10 @@
 </head>
 
 <body>
-
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-md-12">
                 <ol class="breadcrumb">
-
                     <li id="A">
                         Home
                     </li>
@@ -30,34 +28,40 @@
                 </ol>
             </div>
         </div>
-        <div class="row">
+       <!-- <div class="row">
             <div class="col-xs-12 col-md-12">
-        <div class="dropdown visible-xs-*">
-            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-              Menu
-              <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-            </ul>
-          </div>
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="true">
+                        Menu
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li>
+                            <a href="#hom">Home</a>
+                        </li>
+                        <li>
+                            <a href="#port">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#res">Resume</a>
+                        </li>
+                        <li>
+                            <a href="#con">Connect</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-    </div>
-
-
+        </div>-->
 
         <div class="row">
             <div class="col-xs-12 col-md-12">
-                <div class="jumbotron">
+                <div class="jumbotron" id="home">
                     <div class="backdrop">
                         <h2 id="jumbotext">Hi there, name's Matt.
                             <span id="full">I'm a Philly web developer.</span> Take a look at some of my projects.
                             <span>
-                               <!-- <img src="Images/ok.png" id="ok">-->
+                                <!-- <img src="Images/ok.png" id="ok">-->
                             </span>
                         </h2>
                     </div>
@@ -65,7 +69,7 @@
             </div>
         </div>
 
-        <div class="portfolio">
+        <div class="portfolio" id="port">
             <div class="row">
                 <div class="col-xs-12 col-md-4">
                     <a href="https://bereznd1.github.io/TuneTracker/index.html" target="_blank">
@@ -112,7 +116,8 @@
                         <div class="thumbnail">
                             <div class="caption">
                                 <h3>Train Scheduler</h3>
-                                <p>Users post train scheduling information to this app. Train data is saved onto a table and viewable from any device accessing the webpage.</p>
+                                <p>Users post train scheduling information to this app. Train data is saved onto a table and
+                                    viewable from any device accessing the webpage.</p>
                             </div>
                         </div>
                     </a>
@@ -174,7 +179,8 @@
                         <div class="thumbnail">
                             <div class="caption">
                                 <h3>Memory Game</h3>
-                                <p>A memory game built with React.js. Users pick as many new simpsons character cards as they can in order to beat the high score.</p>
+                                <p>A memory game built with React.js. Users pick as many new simpsons character cards as they
+                                    can in order to beat the high score.</p>
                             </div>
                         </div>
                 </div>
@@ -185,7 +191,7 @@
         <div class="resume">
             <div class="row">
                 <div class="col-xs-6 col-md-6 col-lg-6 education">
-                    <h6>
+                    <h6 id="res">
                         <u>Technical Skills</u>
                     </h6>
                     <h5>Front-end</h5>
@@ -243,7 +249,8 @@
                     </ul>
                     <h5 id="train">Train Scheduler</h5>
                     <ul id="train">
-                        <li>Users post train scheduling information to this app. Train data is saved onto a table and viewable from any device accessing the webpage.  </li>
+                        <li>Users post train scheduling information to this app. Train data is saved onto a table and viewable
+                            from any device accessing the webpage. </li>
                         <li>
                             <a href="https://mjefferis.github.io/Train-Scheduler/">https://mjefferis.github.io/Train-Scheduler/</a>
                         </li>
@@ -254,14 +261,15 @@
 
         <div class="row">
             <div class="col-xs-12 col-md-12">
-                <div class="connect">
+                <div class="connect" id="con">
                     <div class="w">
                         <div class="row">
                             <div class="col-xs 3 col-md-3"></div>
                             <div class="col-xs-12 col-md-6">
                                 <p id="ccc">Check out my
                                     <a id="link" href="https://www.linkedin.com/in/matthew-jefferis/"> linkedin</a> and
-                                    <a id="link" href="https://github.com/mjefferis">github</a>. Say hello by emailing <a href="mailto:mjosephjefferis@gmail.com">mjosephjefferis@gmail.com</a> or filling out the form below:
+                                    <a id="link" href="https://github.com/mjefferis">github</a>. Say hello by emailing
+                                    <a href="mailto:mjosephjefferis@gmail.com">mjosephjefferis@gmail.com</a> or filling out the form below:
                                 </p>
                             </div>
                             <div class="col-xs-3 col-md-3"></div>
@@ -348,19 +356,17 @@
                 </div>
             </div>
         </div>
-      </div>
+    </div>
     </div>
 
-<!--close out container-->
-</div>
+    <!--close out container-->
+    </div>
 
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://code.jquery.com/jquery.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files 
-        as needed -->
-  <script src="js/bootstrap.min.js"></script>
+    <!-- include javascript, jQuery FIRST -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.ui.min.js"></script>
     <script src="app.js"></script>
