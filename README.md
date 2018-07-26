@@ -7,5 +7,5 @@ This is the repo for my personal website. The website hosts my portfolio and res
 Bootstrap 3/CSS/HTML <br/>
 Javascript/jQuery <br/>
 Firebase <br/>
-Velocity.js 
+
 
