@@ -28,40 +28,15 @@
                 </ol>
             </div>
         </div>
-       <!-- <div class="row">
-            <div class="col-xs-12 col-md-12">
-                <div class="dropdown">
-                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="true">
-                        Menu
-                        <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li>
-                            <a href="#hom">Home</a>
-                        </li>
-                        <li>
-                            <a href="#port">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#res">Resume</a>
-                        </li>
-                        <li>
-                            <a href="#con">Connect</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>-->
-
         <div class="row">
             <div class="col-xs-12 col-md-12">
                 <div class="jumbotron" id="home">
                     <div class="backdrop">
                         <h2 id="jumbotext">Hi there, name's Matt.
-                            <span id="full">I'm a Philly web developer.</span> Take a look at some of my projects.
+                            <span id="full">I'm a Philly web developer with a focus in UI design and front-end frameworks. </span> Take a
+                            look at some of my projects.
                             <span>
-                                <!-- <img src="Images/ok.png" id="ok">-->
+                                <img src="Images/ok.png" width=35px height=45px id="full">
                             </span>
                         </h2>
                     </div>
@@ -71,124 +46,166 @@
 
         <div class="portfolio" id="port">
             <div class="row">
-                <div class="col-xs-12 col-md-4">
-                    <a href="https://bereznd1.github.io/TuneTracker/index.html" target="_blank">
-                        <div class="thumbnail">
-                            <div class="caption">
-                                <h3>Tune Tracker</h3>
-                                <p>This app was made to help musicians connect. It uses both mapbox's and youtube's APIs to
-                                    let users upload their geographical coordinates and a clip of their music. Using Firebase,
-                                    user information is saved onto the app. </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-xs-12 col-md-4">
-                    <a href="https://mjefferis.github.io/Phish-Trivia/" target="_blank">
-                        <div class="thumbnail">
-                            <div class="caption">
-                                <h3>Phish Quiz</h3>
-                                <p>Built using JavaScript and jQuery, the user has 60 seconds to answer five questions about
-                                    the rock band Phish. Once all questions are answered or the time is up, the number answered
-                                    correctly is tallied.
+                <div class="col-xs-12 col-md-6">
+                    <div class="thumbnail">
+                        <div class="caption">
+                            <h3>Tune Tracker</h3>
+                            <p>An app in which musiacians can search for each other by geographical coordinates. <span id="full">It uses both mapbox's and youtube's APIs.
+                                With Firebase, user information is saved onto the app.</span>
+                            </p>
+                            <div class="buttons">
+                                <p>
+                                    <a href="https://bereznd1.github.io/TuneTracker/index.html" target="_blank" class="btn btn-primary"
+                                        role="button">Visit</a>
+                                    <a href="https://github.com/mjefferis/TuneTracker-1" class="btn btn-default"
+                                        target="_blank" role="button">Source Code</a>
                                 </p>
                             </div>
                         </div>
-                    </a>
-                </div>
-                <div class="col-xs-12 col-md-4">
-                    <a href="https://mjefferis.github.io/Twin-Peaks-GIFS/" target="_blank">
-                        <div class="thumbnail">
-                            <div class="caption">
-                                <h3>Twin Peaks Gifs Generator</h3>
-                                <p>This webpage uses GIPHY's API to feature GIFS from Twin Peaks. Click on a character button
-                                    and 10 GIFS corresponding to the character will be displayed.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-xs-12 col-md-4">
-                    <a href="https://mjefferis.github.io/Train-Scheduler/" target="_blank">
-                        <div class="thumbnail">
-                            <div class="caption">
-                                <h3>Train Scheduler</h3>
-                                <p>Users post train scheduling information to this app. Train data is saved onto a table and
-                                    viewable from any device accessing the webpage.</p>
-                            </div>
-                        </div>
-                    </a>
+                    </div>
                 </div>
 
-                <div class="col-xs-12 col-md-4">
-                    <a href="https://github.com/mjefferis/Bamazon" target="_blank">
-                        <div class="thumbnail">
-                            <div class="caption">
-                                <h3>Bamazon</h3>
-                                <p>An Amazon-like storefront built with MySql and Node.js. The app takes in orders from users
-                                    and deplete stock from the store's inventory. Customers can also add items to inventory
-                                    and view items low in stock.</p>
+                <div class="col-xs-12 col-md-6">
+                    <div class="thumbnail">
+                        <div class="caption">
+                            <h3>Phish Quiz</h3>
+                            <p>Built using JavaScript and jQuery, the user has 60 seconds to answer five questions about the
+                                rock band Phish. <span id="full">Once all questions are answered or the time is up, the number answered correctly
+                                is tallied.</span>
+                            </p>
+                            <div class="buttons">
+                                <p>
+                                    <a href="https://mjefferis.github.io/Phish-Trivia/" target="_blank" class="btn btn-primary"
+                                        role="button">Visit</a>
+                                    <a href="https://github.com/mjefferis/Phish-Trivia/tree/master" class="btn btn-default"
+                                        target="_blank" role="button">Source Code</a>
+                                </p>
                             </div>
                         </div>
-                    </a>
-                </div>
-                <div class="col-xs-12 col-md-4">
-                    <a href="https://stunning-glacier-bay-73317.herokuapp.com/" target="_blank">
-                        <div class="thumbnail">
-                            <div class="caption">
-                                <h3>BandBase</h3>
-                                <p>Bandbase is a database of bands around the country. Built using React.js and MongoDB.</p>
-                            </div>
-                        </div>
-                    </a>
+                    </div>
+
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12 col-md-4">
-                    <a href="https://mjefferis.github.io/Crystal-Game/" target="_blank">
-                        <div class="thumbnail">
-                            <div class="caption">
-                                <h3>Crystal Game</h3>
-                                <p>This app generates a target number and the user is to match that number by clicking crystals.
-                                    Each crystal is given a random numerical value between 1 and 12. The user wins if they
-                                    match the number.
+                <div class="col-xs-12 col-md-6">
+                    <div class="thumbnail">
+                        <div class="caption">
+                            <h3>Twin Peaks Gifs Generator</h3>
+                            <p>This webpage uses GIPHY's API to feature GIFS from Twin Peaks. <span id="full">Click on a character button and
+                                10 GIFS corresponding will be displayed.</p></span>
+                            <div class="buttons">
+                                <p>
+                                    <a href="https://mjefferis.github.io/Twin-Peaks-GIFS/" target="_blank" class="btn btn-primary"
+                                        role="button">Visit</a>
+                                    <a href="https://github.com/mjefferis/Twin-Peaks-GIFS" class="btn btn-default"
+                                        target="_blank" role="button">Source Code</a>
                                 </p>
                             </div>
                         </div>
-                    </a>
+                    </div>
+
                 </div>
 
-                <div class="col-xs-12 col-md-4">
-                    <a href="https://mjefferis.github.io/Psychic-Game/" target="_blank">
-                        <div class="thumbnail">
-                            <div class="caption">
-                                <h3>Psychic Game</h3>
-                                <p>The app generates a random letter and the user has nine chances to guess the correct letter.
-                                    If the user either guesses correct or runs out of guess, a win or loss is tallied and
-                                    the game automatically resets.
+
+                <div class="col-xs-12 col-md-6">
+                    <div class="thumbnail">
+                        <div class="caption">
+                            <h3>Train Scheduler</h3>
+                            <p>Users post train scheduling information to this app. <span id="full">Train data is saved onto a table and viewable
+                                from any device accessing the webpage.</p></span>
+                            <div class="buttons">
+                                <p>
+                                    <a href="https://mjefferis.github.io/Train-Scheduler/" target="_blank" class="btn btn-primary"
+                                        role="button">Visit</a>
+                                    <a href="https://github.com/mjefferis/Twin-Peaks-GIFS" class="btn btn-default"
+                                        target="_blank" role="button">Source Code</a>
                                 </p>
                             </div>
                         </div>
-                    </a>
-                </div>
-                <div class="col-xs-12 col-md-4">
-                    <a href="https://pure-harbor-13590.herokuapp.com/" target="_blank">
-                        <div class="thumbnail">
-                            <div class="caption">
-                                <h3>Memory Game</h3>
-                                <p>A memory game built with React.js. Users pick as many new simpsons character cards as they
-                                    can in order to beat the high score.</p>
-                            </div>
-                        </div>
+                    </div>
+
                 </div>
             </div>
-            </a>
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <div class="thumbnail">
+                        <div class="caption">
+                            <h3>BandBase</h3>
+                            <p>Bandbase is a database of bands around the country. Bands can be filtered by genre, name, tour availability, and location. <span id="full"> It was built using React.js, Passport.js, Bootstrap, and MongoDB.</span></p>
+                            <div class="buttons">
+                                <p>
+                                    <a href="https://mighty-ridge-41365.herokuapp.com/" target="_blank" class="btn btn-primary"
+                                        role="button">Visit</a>
+                                    <a href="https://github.com/bereznd1/BandBase" class="btn btn-default" target="_blank"
+                                        role="button">Source Code</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="col-xs-12 col-md-6">
+                    <div class="thumbnail">
+                        <div class="caption">
+                            <h3>Crystal Game</h3>
+                            <p>This app generates a target number and the user is to match that number by clicking crystals.
+                               <span id="full"> Each crystal is given a random numerical value between 1 and 12. The user wins if they match
+                                the number.</span>
+                            </p>
+                            <div class="buttons">
+                                <p>
+                                    <a href="https://mjefferis.github.io/Crystal-Game/" target="_blank" class="btn btn-primary"
+                                        role="button">Visit</a>
+                                    <a href="https://github.com/mjefferis/Crystal-Game" class="btn btn-default"
+                                        target="_blank" role="button">Source Code</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <div class="thumbnail">
+                        <div class="caption">
+                            <h3>Psychic Game</h3>
+                            <p>The app generates a random letter and the user has nine chances to guess the correct letter.
+                            </p>
+                            <div class="buttons">
+                                <p>
+                                    <a href="https://mjefferis.github.io/Psychic-Game/" target="_blank" class="btn btn-primary"
+                                        role="button">Visit</a>
+                                    <a href="https://github.com/mjefferis/Psychic-Game" class="btn btn-default"
+                                        target="_blank" role="button">Source Code</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                <div class="thumbnail">
+                    <div class="caption">
+                        <h3>Memory Game</h3>
+                        <p>A memory game built with React.js. Users pick as many new simpsons character cards as they can in
+                            order to beat the high score.</p>
+                        <div class="buttons">
+                            <p>
+                                <a href="https://pure-harbor-13590.herokuapp.com/" target="_blank" class="btn btn-primary" role="button">Visit</a>
+                                <a href="https://github.com/mjefferis/React-Memory-Game" class="btn btn-default"
+                                    target="_blank" role="button">Source Code</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
 
-        <div class="resume">
+        <div class="resume" id="res">
             <div class="row">
                 <div class="col-xs-6 col-md-6 col-lg-6 education">
                     <h6 id="res">
@@ -233,6 +250,7 @@
                         <li>Provides oversight and handles sensitive calls for remote call agents. </li>
                         <li>Oversees special membership requests. </li>
                         <li>Participates in Foundation events and commended for initiative, enthusiasm and customer service.</li>
+                        <li>Increased social media response rate</li>
                     </ul>
                     <h6>
                         <u>Application Highlights</u>
@@ -247,12 +265,13 @@
                             <a href="https://bereznd1.github.io/TuneTracker/index.html">https://bereznd1.github.io/TuneTracker/index.html</a>
                         </li>
                     </ul>
-                    <h5 id="train">Train Scheduler</h5>
+                    <h5 id="train">BandBase</h5>
                     <ul id="train">
-                        <li>Users post train scheduling information to this app. Train data is saved onto a table and viewable
-                            from any device accessing the webpage. </li>
+                        <li>An Online Database of Bands. Users can create an account and find other bands by filtering by
+                            genre, name, and tour availability. 
+                        </li>
                         <li>
-                            <a href="https://mjefferis.github.io/Train-Scheduler/">https://mjefferis.github.io/Train-Scheduler/</a>
+                            <a href="https://mighty-ridge-41365.herokuapp.com/">https://mighty-ridge-41365.herokuapp.com/</a>
                         </li>
                     </ul>
                 </div>

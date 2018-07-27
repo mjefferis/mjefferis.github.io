@@ -62,21 +62,21 @@ $("#submit").on("click", function (event) {
     if (fname === "" ||  email === "" || message === "") {
         $('#emptyform').show();
         setTimeout(function () { $("#emptyform").hide(); }, 3000);
-        $('.btn').hide();
+        $('#submit').hide();
         setTimeout(function () { $(".btn").show(); }, 3000);
     }
 
    else if (email.indexOf('@')<0){
         $('#bademail').show();
         setTimeout(function () { $("#bademail").hide(); }, 3000);
-        $('.btn').hide();
+        $('#submit').hide();
         setTimeout(function () { $(".btn").show(); }, 3000);
 
     }
     else {
         $('#successform').show();
         setTimeout(function () { $("#successform").hide(); }, 3000);
-        $('.btn').hide();
+        $('#submit').hide();
         setTimeout(function () { $(".btn").show(); }, 3000);
 
        var newSubmission = {
