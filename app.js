@@ -15,7 +15,7 @@ $('.alert').hide();
 $('#A').on('click', function () {
     $('html, body').animate({
         scrollTop: $(".jumbotron").offset().top
-    }, 1);
+    }, 800);
     /*$("#A").velocity({
         translateY: "10px"
       }, {
@@ -26,21 +26,21 @@ $('#A').on('click', function () {
 $('#P').on('click', function () {
     $('html, body').animate({
         scrollTop: $(".portfolio").offset().top
-    }, 1);
+    }, 800);
 
 });
 
 $('#C').on('click', function () {
     $('html, body').animate({
         scrollTop: $(".connect").offset().top
-    }, 1);
+    }, 800);
 
 });
 
 $('#B').on('click', function () {
     $('html, body').animate({
         scrollTop: $(".education").offset().top
-    }, 1);
+    }, 800);
 
 });
 
