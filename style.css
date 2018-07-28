@@ -16,6 +16,10 @@ textarea {
   resize: none;
 }
 
+.resume{
+    overflow:auto;
+}
+
 form {
     color:white;
     z-index:4;
