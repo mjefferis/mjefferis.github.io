@@ -16,10 +16,6 @@ textarea {
   resize: none;
 }
 
-.resume{
-    overflow:auto;
-}
-
 form {
     color:white;
     z-index:4;
@@ -37,11 +33,6 @@ form {
     bottom:15px;
     text-align:center;
     overflow:auto;
-}
-
-.buttons .btn-primary, .buttons .btn-default{
-  
-
 }
 
 label {
@@ -109,6 +100,10 @@ label {
 
 a {
    color: skyblue; 
+}
+
+.thumbnail:hover{
+    box-shadow:4px 8px #888888;
 }
 
 @media(max-width:767px){  
@@ -396,21 +391,21 @@ h5 {
     
     h6{
         font-family:'times new roman';
-        font-size:30px;
+        font-size:22px;
         }
         
     h5{
         font-family:'times new roman';
-        font-size:27px;
+        font-size:19px;
     }
     
     .resume p{
-        font-size:20px;
+        font-size:12px;
         font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
     }
     
     .resume li{
-        font-size:20px;
+        font-size:12px;
         font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
     }
 }
